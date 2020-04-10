@@ -5,6 +5,10 @@
 #ifndef XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_FLOATING_FLOATINGSIZE_H
 #define XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_FLOATING_FLOATINGSIZE_H
 
+#include <xlinear/config/floating.h>
+
+#if XLINEAR_CFG_FLOATING_USE_ULP_COMPARE
+
 #include <cstddef>
 #include <cstdint>
 
@@ -32,5 +36,7 @@ namespace floating {
 	template<typename FP>
 	using SizeType = SizeTypeImpl<sizeof(FP)>;
 }
+
+#endif
 
 #endif //XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_FLOATING_FLOATINGSIZE_H
