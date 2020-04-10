@@ -7,12 +7,16 @@
 
 #include "ScalarMatrix.h"
 
-extern template class ScalarMatrix<long double>;
-extern template class ScalarMatrix<double>;
-extern template class ScalarMatrix<float>;
+extern template class matrix::StaticMatrix<long double, 1, 1>;
+extern template class matrix::StaticMatrix<double, 1, 1>;
+extern template class matrix::StaticMatrix<float, 1, 1>;
 
-using LongDouble = ScalarMatrix<long double>;
-using Double = ScalarMatrix<double>;
-using Float = ScalarMatrix<float>;
+extern template class matrix::ScalarMatrix<long double>;
+extern template class matrix::ScalarMatrix<double>;
+extern template class matrix::ScalarMatrix<float>;
+
+using LongDouble = matrix::ScalarMatrix<long double>;
+using Double = matrix::ScalarMatrix<double>;
+using Float = matrix::ScalarMatrix<float>;
 
 #endif //XLINEAR_XLINEAR_INCLUDE_XLINEAR_MATRIX_SCALAR_H

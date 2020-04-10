@@ -17,5 +17,4 @@ public:
 	static inline std::unique_ptr<Test> Create() { return std::make_unique<TestMatrix>(); };
 };
 
-
 #endif //XLINEAR_XLINEAR_TESTS_SRC_TESTS_TESTMATRIX_H

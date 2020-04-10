@@ -4,6 +4,10 @@
 
 #include <xlinear/matrix/Scalar.h>
 
-template class ScalarMatrix<long double>;
-template class ScalarMatrix<double>;
-template class ScalarMatrix<float>;
+template class matrix::StaticMatrix<long double, 1, 1>;
+template class matrix::StaticMatrix<double, 1, 1>;
+template class matrix::StaticMatrix<float, 1, 1>;
+
+template class matrix::ScalarMatrix<long double>;
+template class matrix::ScalarMatrix<double>;
+template class matrix::ScalarMatrix<float>;

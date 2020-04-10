@@ -17,7 +17,7 @@ template<typename DataType>
 static void testIO(const char *input, const DataType &value)
 {
 	std::stringstream ss(input);
-	ScalarMatrix<DataType> scalar;
+	matrix::ScalarMatrix<DataType> scalar;
 	ss >> scalar;
 	if(scalar != value)
 		throw std::logic_error("Failed scalar stream input");

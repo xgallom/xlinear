@@ -1,0 +1,10 @@
+//
+// Created by xgallom on 4/10/20.
+//
+
+#ifndef XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_SCALAR_H
+#define XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_SCALAR_H
+
+#include "matrix/Scalar.h"
+
+#endif //XLINEAR_ROOT_XLINEAR_INCLUDE_XLINEAR_SCALAR_H

@@ -8,30 +8,42 @@
 #include "ScalarMatrix.h"
 
 template<typename DT>
-ScalarMatrix<DT> operator+(ScalarMatrix<DT> left, const ScalarMatrix<DT> &right) { return left += right; }
+matrix::ScalarMatrix<DT> operator+(matrix::ScalarMatrix<DT> left, const matrix::ScalarMatrix<DT> &right)
+{
+	return left += right;
+}
 template<typename DT>
-ScalarMatrix<DT> operator-(ScalarMatrix<DT> left, const ScalarMatrix<DT> &right) { return left -= right; }
+matrix::ScalarMatrix<DT> operator-(matrix::ScalarMatrix<DT> left, const matrix::ScalarMatrix<DT> &right)
+{
+	return left -= right;
+}
 template<typename DT>
-ScalarMatrix<DT> operator*(ScalarMatrix<DT> left, const ScalarMatrix<DT> &right) { return left *= right; }
+matrix::ScalarMatrix<DT> operator*(matrix::ScalarMatrix<DT> left, const matrix::ScalarMatrix<DT> &right)
+{
+	return left *= right;
+}
 template<typename DT>
-ScalarMatrix<DT> operator/(ScalarMatrix<DT> left, const ScalarMatrix<DT> &right) { return left /= right; }
+matrix::ScalarMatrix<DT> operator/(matrix::ScalarMatrix<DT> left, const matrix::ScalarMatrix<DT> &right)
+{
+	return left /= right;
+}
 
 template<typename DT>
-ScalarMatrix<DT> operator+(ScalarMatrix<DT> left, const DT &right) { return left += right; }
+matrix::ScalarMatrix<DT> operator+(matrix::ScalarMatrix<DT> left, const DT &right) { return left += right; }
 template<typename DT>
-ScalarMatrix<DT> operator-(ScalarMatrix<DT> left, const DT &right) { return left -= right; }
+matrix::ScalarMatrix<DT> operator-(matrix::ScalarMatrix<DT> left, const DT &right) { return left -= right; }
 template<typename DT>
-ScalarMatrix<DT> operator*(ScalarMatrix<DT> left, const DT &right) { return left *= right; }
+matrix::ScalarMatrix<DT> operator*(matrix::ScalarMatrix<DT> left, const DT &right) { return left *= right; }
 template<typename DT>
-ScalarMatrix<DT> operator/(ScalarMatrix<DT> left, const DT &right) { return left /= right; }
+matrix::ScalarMatrix<DT> operator/(matrix::ScalarMatrix<DT> left, const DT &right) { return left /= right; }
 
 template<typename DT>
-ScalarMatrix<DT> operator+(const DT &left, ScalarMatrix<DT> right) { return right += left; }
+matrix::ScalarMatrix<DT> operator+(const DT &left, matrix::ScalarMatrix<DT> right) { return right += left; }
 template<typename DT>
-ScalarMatrix<DT> operator-(const DT &left, ScalarMatrix<DT> right) { return right.negate() += left; }
+matrix::ScalarMatrix<DT> operator-(const DT &left, matrix::ScalarMatrix<DT> right) { return right.negate() += left; }
 template<typename DT>
-ScalarMatrix<DT> operator*(const DT &left, ScalarMatrix<DT>right) { return right *= left; }
+matrix::ScalarMatrix<DT> operator*(const DT &left, matrix::ScalarMatrix<DT> right) { return right *= left; }
 template<typename DT>
-ScalarMatrix<DT> operator/(const DT &left, ScalarMatrix<DT> right) { return right.divide(left); }
+matrix::ScalarMatrix<DT> operator/(const DT &left, matrix::ScalarMatrix<DT> right) { return right.divide(left); }
 
 #endif //XLINEAR_XLINEAR_INCLUDE_XLINEAR_MATRIX_SCALAROPERATORS_H
